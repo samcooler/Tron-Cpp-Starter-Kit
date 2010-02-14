@@ -65,6 +65,7 @@ set<Direction> Map::GetMoves(Point player_point)
 		Point destination = player_point.Relative(dirs[i]);
 		if (!(IsWall(destination) or destination == their_point or destination == my_point))
 		{
+			logfile << IsWall(destination) << destination.Print() << endl;
 			moves.insert(dirs[i]);
 		}
 	}

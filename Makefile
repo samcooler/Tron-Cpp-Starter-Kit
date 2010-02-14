@@ -7,17 +7,17 @@
 MyTronBot: MyTronBot.o Map.o Point.o Direction.o
 	g++ -02 -o MyTronBot MyTronBot.o Map.o Point.o Direction.o
 
-MyTronBot.o: MyTronBot.cpp
-	g++ -02 -c -o MyTronBot.o MyTronBot.cpp
+MyTronBot.o: MyTronBot.cc
+	g++ -02 -c -o MyTronBot.o MyTronBot.cc
 
-Map.o: Map.cpp
-	g++ -02 -c -o Map.o Map.cpp
+Map.o: Map.cc
+	g++ -02 -c -o Map.o Map.cc
 	
-Point.o: Point.cpp
-	g++ -02 -c -o Point.o Point.cpp
+Point.o: Point.cc
+	g++ -02 -c -o Point.o Point.cc
 
-Direction.o: Direction.cpp
-	g++ -02 -c -o Direction.o Direction.cpp
+Direction.o: Direction.cc
+	g++ -02 -c -o Direction.o Direction.cc
 	
 clean:
 	rm Map.o Point.o Direction.o MyTronBot.o MyTronBot

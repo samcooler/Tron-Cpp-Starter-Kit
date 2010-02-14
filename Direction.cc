@@ -46,6 +46,7 @@ Direction::Direction(Directs indir)
 	}
 }
 
+// output the move to the Tron Engine
 string Direction::WriteMove() const
 {
 	
@@ -56,6 +57,7 @@ string Direction::WriteMove() const
 	return outstring.str();
 }
 
+// the following is needed for the set implementation
 bool Direction::operator<(Direction const& rhs) const
 {
 	return value < rhs.value;
