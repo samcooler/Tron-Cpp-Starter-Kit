@@ -42,8 +42,10 @@ Direction ChooseMove(Map& map)
 
 int main()
 {
+	// change this to 
 	logfile.open( "logfile.txt");
 	time_t seconds;
+	
 	seconds = time(NULL);
 	logfile << "Starting at " << seconds << endl;
 	
@@ -51,13 +53,14 @@ int main()
 	{
 		logfile <<  endl << "Starting new turn" << endl;
 		
-		
 		Map map; // reads map input from the Tron engine
 		logfile << "Have map:" << endl << map.Print();
 		// N.B:
 		// the following write to the log file is not what does the Tron interface
 		// .WriteMove() does that.
 		logfile << ChooseMove(map).WriteMove();
+		
 	}
+	
 	return 0;
 }

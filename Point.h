@@ -13,8 +13,8 @@ public:
 	std::string Print() const;
 	Point Relative(Direction) const;
 	void Move(Direction); // does not change the map. Use Map::MovePlayer to do that
-	int manhattanDistance(const Point) const;
-	int euclideanDistance(const Point) const;
+	int ManhattanDistance(const Point) const;
+	int EuclideanDistance(const Point) const;
 };
 
 #endif

@@ -1,4 +1,3 @@
-
 #include "MyTronBot.h"
 #include "Map.h"
 #include "Point.h"
@@ -46,14 +45,14 @@ void Point::Move(Direction dir)
 }
 
 // The manhattan distance is used for some searches
-int Point::manhattanDistance(Point far) const
+int Point::ManhattanDistance(Point far) const
 {
 	return abs(far.x - x) + abs(far.y - y);
 }
 
 // The crow's flight distance between two points, rounded to an int
 // If you want real path distance you're going to have to work for it.
-int Point::euclideanDistance(Point far) const
+int Point::EuclideanDistance(Point far) const
 {
 	return (int) sqrt((far.x - x)*(far.x - x)+(far.y - y)*(far.y - y));
 }

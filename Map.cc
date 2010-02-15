@@ -1,5 +1,3 @@
-// Map.cpp
-
 #include "Point.h"
 #include "MyTronBot.h"
 #include "Map.h"
